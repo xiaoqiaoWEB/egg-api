@@ -1,0 +1,718 @@
+2020-06-27 18:38:29,355 WARN 6587 [-/::1/-/0ms DELETE /] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-27 18:38:29,356 WARN 6587 [-/::1/-/2ms DELETE /] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "missing csrf token"
+pid: 6587
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 18:56:26,534 ERROR 6910 [-/127.0.0.1/-/4ms GET /list] nodejs.ReferenceError: ctx is not defined
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:20:5)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+
+pid: 6910
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:23:36,671 WARN 6977 [-/127.0.0.1/-/4ms GET /list] nodejs.UnauthorizedError: invalid signature
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:133:14
+    at getSecret (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:41:56
+name: "UnauthorizedError"
+message: "invalid signature"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"invalid signature"}
+pid: 6977
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:33:33,019 ERROR 7171 [-/::1/-/14ms POST /login] nodejs.TypeError: Cannot read property 'require' of undefined
+    at HomeController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:14:26)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 7171
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:34:37,349 ERROR 7175 [-/::1/-/18ms POST /login] nodejs.TypeError: Cannot read property 'request' of undefined
+    at HomeController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:14:26)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 7175
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:58:51,626 ERROR 7251 [-/127.0.0.1/-/7ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:28:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7251
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:59:56,409 ERROR 7256 [-/127.0.0.1/-/10ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:28:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7256
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:00:21,891 ERROR 7256 [-/127.0.0.1/-/0ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:28:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7256
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:01:16,350 ERROR 7260 [-/127.0.0.1/-/9ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:29:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7260
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:03:17,629 ERROR 7260 [-/127.0.0.1/-/1ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:29:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7260
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:04:32,235 ERROR 7304 [-/127.0.0.1/-/4ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:29:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7304
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:07:37,875 WARN 7316 [-/127.0.0.1/-/1ms GET /list] nodejs.UnauthorizedError: invalid signature
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:133:14
+    at getSecret (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:41:56
+name: "UnauthorizedError"
+message: "invalid signature"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"invalid signature"}
+pid: 7316
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 21:58:35,021 WARN 7717 [-/127.0.0.1/-/1ms GET /] nodejs.UnauthorizedError: invalid token
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:117:18
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:12)
+    at decoded (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async errorHandler (/Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:7)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/notfound.js:5:5)
+name: "UnauthorizedError"
+message: "invalid token"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"invalid token"}
+pid: 7717
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 22:14:17,044 ERROR 7823 [-/127.0.0.1/-/1ms GET /] nodejs.Error: admin copy is not match 'a-z0-9_-' in admin copy.js
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:234:13
+    at Array.map (<anonymous>)
+    at defaultCamelize (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:232:21)
+    at getProperties (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:193:10)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:154:28)
+    at FileLoader.load (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 7823
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 22:14:21,795 ERROR 7828 [-/127.0.0.1/-/0ms GET /] nodejs.Error: admin copy is not match 'a-z0-9_-' in admin copy.js
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:234:13
+    at Array.map (<anonymous>)
+    at defaultCamelize (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:232:21)
+    at getProperties (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:193:10)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:154:28)
+    at FileLoader.load (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 7828
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 23:08:08,166 WARN 8380 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 8380
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 23:18:51,809 WARN 8482 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:25:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"username","code":"missing_field"},{"message":"required","field":"password","code":"missing_field"}]
+pid: 8482
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 23:19:47,340 WARN 8482 [-/127.0.0.1/-/1ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:25:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"username","code":"missing_field"},{"message":"required","field":"password","code":"missing_field"}]
+pid: 8482
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 23:20:04,407 WARN 8482 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:25:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"username","code":"missing_field"},{"message":"required","field":"password","code":"missing_field"}]
+pid: 8482
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 23:21:14,050 WARN 8485 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:27:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"username","code":"missing_field"},{"message":"required","field":"password","code":"missing_field"}]
+pid: 8485
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 23:21:15,482 WARN 8485 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:27:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"username","code":"missing_field"},{"message":"required","field":"password","code":"missing_field"}]
+pid: 8485
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 23:21:16,224 WARN 8485 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:27:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"username","code":"missing_field"},{"message":"required","field":"password","code":"missing_field"}]
+pid: 8485
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:00:26,274 WARN 8678 [-/127.0.0.1/-/1ms GET /] nodejs.UnauthorizedError: 密码不正确!
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:46:16)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/egg-api/node_modules/@koa/cors/index.js:56:32)
+message: "密码不正确!"
+pid: 8678
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:00:43,881 WARN 8678 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: 用户名或密码不正确
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:28:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/egg-api/node_modules/@koa/cors/index.js:56:32)
+message: "用户名或密码不正确"
+pid: 8678
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:01:24,999 WARN 8681 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:28:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/egg-api/node_modules/@koa/cors/index.js:56:32)
+message: "用户名不存在或错误！"
+pid: 8681
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:01:32,154 WARN 8681 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: 密码不正确!
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:46:16)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/egg-api/node_modules/@koa/cors/index.js:56:32)
+message: "密码不正确!"
+pid: 8681
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:01:41,593 WARN 8681 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:26:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"password"}]
+pid: 8681
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:03:55,318 WARN 8681 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:26:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"password","code":"missing_field"}]
+pid: 8681
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:04:07,964 WARN 8681 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:26:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"password","code":"missing_field"}]
+pid: 8681
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:07:29,588 ERROR 8688 [-/::1/-/11ms GET /admin] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/application.js:270:15)
+    at handleResponse (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/application.js:166:34)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 8688
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:08:58,690 WARN 8689 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:28:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/egg-api/node_modules/@koa/cors/index.js:56:32)
+message: "用户名不存在或错误！"
+pid: 8689
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:10:09,382 WARN 8706 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/admin.js:28:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/egg-api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/egg-api/node_modules/@koa/cors/index.js:56:32)
+message: "用户名不存在或错误！"
+pid: 8706
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:11:58,058 WARN 8706 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 8706
+hostname: xiaoqiaodeMacBook-Pro.local
+

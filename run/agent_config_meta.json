@@ -1,0 +1,316 @@
+{
+  "keys": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+  "mongoose": {
+    "url": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+    "options": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/config/config.default.js",
+    "plugins": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/config/config.default.js",
+    "loadModel": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/config/config.default.js",
+    "app": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/config/config.default.js",
+    "agent": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/config/config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+      "ignoreJSON": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+      "type": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+    "protocolWhiteList": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "jwt": {
+    "secret": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+    "expiresIn": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+    "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/config/config.default.js"
+  },
+  "cors": {
+    "origin": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+    "allowMethods": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js"
+  },
+  "middleware": "/Users/xiaoqiao/Documents/egg-api/config/config.default.js",
+  "session": {
+    "maxAge": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-view/config/config.default.js"
+  },
+  "validate": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg-validate/config/config.default.js",
+  "env": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "name": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "version": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "description": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "private": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "egg": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "egg-jwt": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "egg-mongoose": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "md5": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "stop": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "dev": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "debug": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "test": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "cov": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "lint": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "ci": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "autod": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "url": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "license": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "strict": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "depth": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "env": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "level": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "logging": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "port": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/xiaoqiao/Documents/egg-api/node_modules/egg/config/config.default.js"
+}
