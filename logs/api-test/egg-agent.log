@@ -513,3 +513,17 @@ hostname: xiaoqiaodeMacBook-Pro.local
 2020-06-28 00:13:26,376 INFO 8843 [egg-watcher] Start watching: "/Users/xiaoqiao/Documents/egg-api/app.js"
 2020-06-28 00:13:26,376 INFO 8843 [egg-watcher:agent] watcher start success
 2020-06-28 00:13:26,394 INFO 8843 [egg:core] dump config after ready, 3ms
+2020-06-28 00:27:41,678 INFO 10087 [egg:logger] init all loggers with options: {"dir":"/Users/xiaoqiao/Documents/api/logs/api-test","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"api-test-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-28 00:27:41,684 INFO 10087 [egg:core] dump config after load, 3ms
+2020-06-28 00:27:41,708 INFO 10087 [egg-watcher] Start watching: ["/Users/xiaoqiao/Documents/api/app","/Users/xiaoqiao/Documents/api/config","/Users/xiaoqiao/Documents/api/mocks","/Users/xiaoqiao/Documents/api/mocks_proxy","/Users/xiaoqiao/Documents/api/app.js"]
+2020-06-28 00:27:41,708 INFO 10087 [egg-watcher] Start watching: "/Users/xiaoqiao/Documents/api/app"
+2020-06-28 00:27:41,708 INFO 10087 [egg-watcher] Start watching: "/Users/xiaoqiao/Documents/api/config"
+2020-06-28 00:27:41,708 INFO 10087 [egg-watcher] Start watching: "/Users/xiaoqiao/Documents/api/mocks"
+2020-06-28 00:27:41,708 INFO 10087 [egg-watcher] Start watching: "/Users/xiaoqiao/Documents/api/mocks_proxy"
+2020-06-28 00:27:41,708 INFO 10087 [egg-watcher] Start watching: "/Users/xiaoqiao/Documents/api/app.js"
+2020-06-28 00:27:41,708 INFO 10087 [egg-watcher:agent] watcher start success
+2020-06-28 00:27:41,715 INFO 10087 [egg:core] dump config after ready, 2ms
+2020-06-28 00:30:59,150 INFO 10087 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/xiaoqiao/Documents/api/app/controller/access.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9116794,"size":0,"blocks":0,"atimeMs":1593275459115.0884,"mtimeMs":1593275459036.719,"ctimeMs":1593275459036.719,"birthtimeMs":1593275459036.719,"atime":"2020-06-27T16:30:59.115Z","mtime":"2020-06-27T16:30:59.037Z","ctime":"2020-06-27T16:30:59.037Z","birthtime":"2020-06-27T16:30:59.037Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-06-28 00:30:59,354 WARN 10087 [agent:development] reload worker because /Users/xiaoqiao/Documents/api/app/controller/access.js rename
+2020-06-28 00:31:14,737 WARN 10087 [agent:development] reload worker because /Users/xiaoqiao/Documents/api/app/controller/access.js rename
+2020-06-28 00:31:14,532 INFO 10087 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/xiaoqiao/Documents/api/app/controller/access.js","remove":true,"isDirectory":false,"isFile":false}

@@ -520,3 +520,15 @@
 2020-06-28 00:13:27,354 INFO 8843 [Timer] /Users/xiaoqiao/Documents/egg-api/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 15392647ms at 2020-06-28 04:30:00.001
 2020-06-28 00:13:27,355 INFO 8843 [Timer] /Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 85592646ms at 2020-06-29 00:00:00.001
 2020-06-28 00:13:27,356 INFO 8843 [Timer] /Users/xiaoqiao/Documents/egg-api/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 85593645ms at 2020-06-29 00:00:01.001
+2020-06-28 00:27:42,499 INFO 10087 [Timer] /Users/xiaoqiao/Documents/api/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 14537503ms at 2020-06-28 04:30:00.002
+2020-06-28 00:27:42,500 INFO 10087 [Timer] /Users/xiaoqiao/Documents/api/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 84737501ms at 2020-06-29 00:00:00.001
+2020-06-28 00:27:42,501 INFO 10087 [Timer] /Users/xiaoqiao/Documents/api/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 84738500ms at 2020-06-29 00:00:01.001
+2020-06-28 00:27:42,258 INFO 10088 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-06-28 00:27:42,258 INFO 10088 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-06-28 00:27:42,258 INFO 10088 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-06-28 00:31:00,089 INFO 10163 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-06-28 00:31:00,089 INFO 10163 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-06-28 00:31:00,089 INFO 10163 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-06-28 00:31:15,306 INFO 10181 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-06-28 00:31:15,306 INFO 10181 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-06-28 00:31:15,306 INFO 10181 [egg-schedule]: register schedule /Users/xiaoqiao/Documents/api/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
