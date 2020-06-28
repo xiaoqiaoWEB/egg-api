@@ -15,12 +15,24 @@
   {
     "name": null,
     "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/admin/login",
+    "regexp": "/^\\/admin\\/login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
       "HEAD",
       "GET"
     ],
     "paramNames": [],
-    "path": "/admin",
-    "regexp": "/^\\/admin(?:\\/(?=$))?$/",
+    "path": "/admin/user",
+    "regexp": "/^\\/admin\\/user(?:\\/(?=$))?$/",
     "stack": [
       "middleware",
       "wrappedController"
@@ -32,9 +44,59 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/admin/login",
-    "regexp": "/^\\/admin\\/login(?:\\/(?=$))?$/",
+    "path": "/admin/user/create",
+    "regexp": "/^\\/admin\\/user\\/create(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/admin/user/:id",
+    "regexp": "/^\\/admin\\/user\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/admin/user/:id",
+    "regexp": "/^\\/admin\\/user\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
       "wrappedController"
     ]
   }

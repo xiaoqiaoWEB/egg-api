@@ -716,3 +716,566 @@ inner: {"message":"No authorization token was found"}
 pid: 8706
 hostname: xiaoqiaodeMacBook-Pro.local
 
+2020-06-28 19:05:39,024 ERROR 11169 [-/127.0.0.1/-/0ms GET /] nodejs.Error: Illegal argument undefined
+    at module.exports (/Users/xiaoqiao/Documents/api/node_modules/md5/md5.js:152:13)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:27:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+
+pid: 11169
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:05:48,694 ERROR 11169 [-/127.0.0.1/-/0ms GET /] nodejs.Error: Illegal argument undefined
+    at module.exports (/Users/xiaoqiao/Documents/api/node_modules/md5/md5.js:152:13)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:27:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+
+pid: 11169
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:06:44,326 WARN 11207 [-/127.0.0.1/-/0ms GET /] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:14:17)
+    at AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:26:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"password","code":"missing_field"}]
+pid: 11207
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:11:54,648 WARN 11297 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:35)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11297
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:12:01,780 WARN 11297 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:35)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11297
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:12:03,694 WARN 11297 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:35)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11297
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:12:27,052 ERROR 11297 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'username' of null
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:56:32)
+
+pid: 11297
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:13:17,198 ERROR 11305 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'username' of null
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:11:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:56:32)
+
+pid: 11305
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:13:47,582 WARN 11313 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:11:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11313
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:13:50,810 WARN 11313 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:11:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11313
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:15:23,949 WARN 11351 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:26)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11351
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:15:25,204 WARN 11351 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:26)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11351
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:15:26,260 WARN 11351 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:26)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11351
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:15:26,881 WARN 11351 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:26)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11351
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:15:27,583 WARN 11351 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:26)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11351
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:27:38,900 ERROR 11559 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce2c57efb0ca123" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce2c57efb0ca123\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce2c57efb0ca123"
+path: "_id"
+reason: {}
+pid: 11559
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:28:03,754 ERROR 11559 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11559
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:28:58,381 ERROR 11559 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11559
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:23,881 ERROR 11581 [-/127.0.0.1/-/1ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:26,296 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:28,080 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:28,972 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:29,550 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:30:55,564 WARN 11581 [-/127.0.0.1/-/1ms GET /] nodejs.ConflictError: 用户不存在！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.getById (/Users/xiaoqiao/Documents/api/app/service/user.js:21:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.getById (/Users/xiaoqiao/Documents/api/app/controller/admin.js:34:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户不存在！"
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:31:01,978 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5e82f1f27293c172a38d5e7f788" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5e82f1f27293c172a38d5e7f788\""
+kind: "ObjectId"
+value: "5e82f1f27293c172a38d5e7f788"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:31:07,452 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5e82f1f27293c172a38d5e7f7" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5e82f1f27293c172a38d5e7f7\""
+kind: "ObjectId"
+value: "5e82f1f27293c172a38d5e7f7"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:31:08,606 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5e82f1f27293c172a38d5e7f7" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5e82f1f27293c172a38d5e7f7\""
+kind: "ObjectId"
+value: "5e82f1f27293c172a38d5e7f7"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:42:20,357 ERROR 11761 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: toal is not defined
+    at AdminController.index (/Users/xiaoqiao/Documents/api/app/controller/admin.js:25:7)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:56:32)
+
+pid: 11761
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:43:37,898 ERROR 11808 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: data is not defined
+    at AdminController.index (/Users/xiaoqiao/Documents/api/app/controller/admin.js:25:10)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:56:32)
+
+pid: 11808
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:50:05,282 WARN 11934 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:11:26)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:39:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 11934
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 20:03:12,761 WARN 12141 [-/127.0.0.1/-/0ms GET /] nodejs.ConflictError: 用户名已存在
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:11:26)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:43:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+message: "用户名已存在"
+pid: 12141
+hostname: xiaoqiaodeMacBook-Pro.local
+

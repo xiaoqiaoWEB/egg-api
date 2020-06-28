@@ -7,21 +7,65 @@ class AdminController extends Controller {
 
   constructor(ctx) {
     super(ctx);
-
     this.userTest = {
       username: { type: 'string', required: true },
-      password: { type: 'string', required: true },
+      password: { type: 'string', required: true }
+    }
+
+    this.testUserName = {
+      username: { type: 'string', required: true }
     }
   }
 
 
   async index() {
     const { ctx, app } = this;
-    let res = await ctx.model.Admin.find();
-    ctx.helper.success({ctx, res})
+    let { fileds = '', pre_page = 2} = ctx.query;
+    let page = Math.max(ctx.query.page * 1, 1) - 1;
+    let prePage = Math.max(pre_page * 1, 1);
+    let toal = await ctx.model.Admin.find().count();
+    let res = await ctx.model.Admin.find().limit(prePage).skip(prePage*page);
+    
+    let data = {
+      toal: toal,
+      page: page+1,
+      pre_page: prePage,
+      list: res
+    }
+
+    ctx.helper.success({ctx, res: data})
   }
 
+  async create() {
+    const { ctx, app } = this;
+    ctx.validate(this.userTest);
+    let data = ctx.request.body || {};
+    let res = await ctx.service.user.create(data);
+    ctx.helper.success({ctx, res});
+  }
+
+  async getById() {
+    const { ctx, app } = this;
+    let id = ctx.params.id;
+    let res = await ctx.service.user.getById(id);
+    ctx.helper.success({ctx, res});
+  }
+
+  async update() {
+    const { ctx, app } = this;
+    ctx.validate(this.testUserName);
+    let id = ctx.params.id;
+    let data = ctx.request.body;
+    await ctx.service.user.update(id, data);
+    ctx.helper.success({ctx, res:null});
+  }
+
+
+
+
+
   async login() {
+    console.log('AAASSASASASQSQSQSQSQ')
     const { ctx, app } = this;
     ctx.validate(this.userTest);
     let user = await ctx.model.Admin.findOne({'username': ctx.request.body.username});
