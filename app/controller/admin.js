@@ -17,17 +17,16 @@ class AdminController extends Controller {
     }
   }
 
-
   async index() {
     const { ctx, app } = this;
-    let { fileds = '', pre_page = 2} = ctx.query;
+    let { fileds = '', pre_page = 5} = ctx.query;
     let page = Math.max(ctx.query.page * 1, 1) - 1;
     let prePage = Math.max(pre_page * 1, 1);
-    let toal = await ctx.model.Admin.find().count();
+    let total = await ctx.model.Admin.find().count();
     let res = await ctx.model.Admin.find().limit(prePage).skip(prePage*page);
     
     let data = {
-      toal: toal,
+      total: total,
       page: page+1,
       pre_page: prePage,
       list: res
@@ -40,6 +39,7 @@ class AdminController extends Controller {
     const { ctx, app } = this;
     ctx.validate(this.userTest);
     let data = ctx.request.body || {};
+    data.added_by = ctx.state.user.userId;
     let res = await ctx.service.user.create(data);
     ctx.helper.success({ctx, res});
   }
@@ -60,12 +60,7 @@ class AdminController extends Controller {
     ctx.helper.success({ctx, res:null});
   }
 
-
-
-
-
   async login() {
-    console.log('AAASSASASASQSQSQSQSQ')
     const { ctx, app } = this;
     ctx.validate(this.userTest);
     let user = await ctx.model.Admin.findOne({'username': ctx.request.body.username});
@@ -79,15 +74,20 @@ class AdminController extends Controller {
       }, app.config.jwt.secret,{
         expiresIn: app.config.jwt.expiresIn
       });
+
       let res = {
         username: user.username,
         userId: user._id,
         role_id: user.role_id,
-        token
+        access_token: token,
+        timpedate: new Date().getTime(),
+        token_type: 'bearer',
+        expires_in: app.config.jwt.expiresIn,
+        timestamp: new Date().getTime()
       }
       ctx.helper.success({ctx, res})
     } else {
-      ctx.throw(404, '密码不正确!')
+      ctx.throw(409, '密码不正确!')
     }
   }
 }

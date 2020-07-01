@@ -24,13 +24,13 @@ module.exports = appInfo => {
       ignoreJSON: true,
     },
     // 应许 访问的白名单
-    domainWhiteList: ['http://localhost:8080'],
+    domainWhiteList: ['http://localhost:8888'],
   };
 
   // jwt
   config.jwt = {
     secret: 'XIAOQIAO',
-    expiresIn: '1d'
+    expiresIn: '60m'
   };
 
    // cors

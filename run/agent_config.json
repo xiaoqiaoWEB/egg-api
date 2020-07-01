@@ -161,7 +161,7 @@
     "jwt": {
       "secret": "<String len: 8>",
       "enable": false,
-      "expiresIn": "1d"
+      "expiresIn": "1m"
     },
     "cors": {
       "origin": "*",

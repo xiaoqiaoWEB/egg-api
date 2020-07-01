@@ -547,3 +547,67 @@ name: "ClusterClientNoResponseError"
 pid: 10087
 hostname: xiaoqiaodeMacBook-Pro.local
 
+2020-07-01 11:22:22,266 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 624079ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 15:13:03,862 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 11481272ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 15:35:09,691 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 245656ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:28:14,277 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 789199ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:33:30,206 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 295971ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:43:29,609 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 559387ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:54:31,547 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 433073ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 19:35:29,571 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 3637635ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+

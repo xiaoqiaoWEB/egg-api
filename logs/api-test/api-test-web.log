@@ -1279,3 +1279,1530 @@ message: "用户名已存在"
 pid: 12141
 hostname: xiaoqiaodeMacBook-Pro.local
 
+2020-07-01 10:21:52,529 WARN 22571 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T02:21:05.000Z"}
+pid: 22571
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 10:31:44,529 WARN 22731 [-/127.0.0.1/-/1ms GET /] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/xiaoqiao/Documents/api/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 22731
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:08:22,442 WARN 23075 [-/127.0.0.1/-/1ms GET /] nodejs.NotFoundError: 密码不正确!
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:90:16)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "密码不正确!"
+pid: 23075
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 19:48:04,334 WARN 23075 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T03:57:08.000Z"}
+pid: 23075
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:20:20,891 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:20:38,101 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:20:55,618 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:21:12,837 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:23:56,654 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:25:09,170 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:30:37,704 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:30:45,265 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:30:52,240 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:31,960 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:32,741 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:33,547 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:34,391 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:35,192 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:36,069 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:36,851 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:37,657 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:38,482 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:39,264 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:40,049 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:40,866 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:41,665 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:42,472 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:43,301 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:44,121 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:44,934 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:46,758 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:47,567 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:48,301 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:49,119 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:49,909 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:50,702 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:51,494 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:52,286 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:53,108 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:53,880 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:54,661 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:55,424 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:56,157 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:56,915 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:57,714 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:58,496 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:32:59,258 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:33:00,057 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:33:00,877 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:33:01,689 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:33:02,459 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:33:03,228 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:33:03,966 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: jwt expired
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:152:16
+    at getSecret (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/api/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:114:27)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+name: "UnauthorizedError"
+message: "jwt expired"
+code: "invalid_token"
+status: 401
+inner: {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-07-01T11:14:35.000Z"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:33:04,832 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/xiaoqiao/Documents/api/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:33:22,050 WARN 26365 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 密码不正确!
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:90:16)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "密码不正确!"
+pid: 26365
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:36:13,018 WARN 27019 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:67:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "用户名不存在或错误！"
+pid: 27019
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:37:24,308 WARN 27019 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:67:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "用户名不存在或错误！"
+pid: 27019
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:38:27,679 WARN 27019 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:67:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "用户名不存在或错误！"
+pid: 27019
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:42:38,811 WARN 27019 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:67:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "用户名不存在或错误！"
+pid: 27019
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:43:51,434 WARN 27019 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:67:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "用户名不存在或错误！"
+pid: 27019
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:43:55,357 WARN 27019 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:67:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "用户名不存在或错误！"
+pid: 27019
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:45:42,960 WARN 27019 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:67:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "用户名不存在或错误！"
+pid: 27019
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 20:47:03,034 WARN 27019 [-/127.0.0.1/-/0ms GET /] nodejs.NotFoundError: 用户名不存在或错误！
+    at Object.throw (/Users/xiaoqiao/Documents/api/node_modules/koa/lib/context.js:97:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:67:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:98:16)
+message: "用户名不存在或错误！"
+pid: 27019
+hostname: xiaoqiaodeMacBook-Pro.local
+

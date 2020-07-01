@@ -14,7 +14,7 @@
     },
     "security": {
       "domainWhiteList": [
-        "http://localhost:8080"
+        "http://localhost:8888"
       ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
@@ -201,7 +201,7 @@
     "jwt": {
       "secret": "<String len: 8>",
       "enable": false,
-      "expiresIn": "1d"
+      "expiresIn": "60m"
     },
     "cors": {
       "origin": "*",
