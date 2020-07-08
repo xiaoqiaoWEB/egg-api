@@ -6,7 +6,7 @@ const Controller = require('egg').Controller;
 class AdminController extends Controller {
 
   constructor(ctx) {
-    super(ctx);
+    super(ctx)
     this.userTest = {
       username: { type: 'string', required: true },
       password: { type: 'string', required: true }
@@ -19,11 +19,32 @@ class AdminController extends Controller {
 
   async index() {
     const { ctx, app } = this;
-    let { fileds = '', pre_page = 5} = ctx.query;
-    let page = Math.max(ctx.query.page * 1, 1) - 1;
+    let { fileds = '', pre_page = 5} = ctx.request.body;
+    let page = Math.max(ctx.request.body.page * 1, 1) - 1;
     let prePage = Math.max(pre_page * 1, 1);
-    let total = await ctx.model.Admin.find().count();
-    let res = await ctx.model.Admin.find().limit(prePage).skip(prePage*page);
+
+    let searchData = {
+      username: {$regex: new RegExp(ctx.request.body.username, 'i')}
+    };
+
+    for ( var attr in ctx.request.body) {
+      if (attr === 'status' && ctx.request.body.status) {
+        searchData.status = ctx.request.body.status
+      } else {
+        delete searchData.status
+      }
+    }
+
+    let total = await ctx.model.Admin
+      .find({ $or: [ searchData ] })
+      .count();
+
+    let res = await ctx.model.Admin
+      .find({ $or: [ searchData ] })
+      .limit(prePage)
+      .skip(prePage*page)
+      .populate('role_id')
+      .sort({'add_time': -1});
     
     let data = {
       total: total,
@@ -60,10 +81,17 @@ class AdminController extends Controller {
     ctx.helper.success({ctx, res:null});
   }
 
+  async remove() {
+    const { ctx, app } = this;
+    let id = ctx.params.id;
+    await ctx.service.user.remove(id);
+    ctx.helper.success({ctx, res:null});
+  }
+
   async login() {
     const { ctx, app } = this;
     ctx.validate(this.userTest);
-    let user = await ctx.model.Admin.findOne({'username': ctx.request.body.username});
+    let user = await ctx.model.Admin.findOne({'username': ctx.request.body.username}).select('password');
     if (!user) { ctx.throw(404, '用户名不存在或错误！') }
     let password = md5(ctx.request.body.password);
     if(password == user.password) {

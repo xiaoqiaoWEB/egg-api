@@ -1,0 +1,1158 @@
+2020-06-27 18:56:26,534 ERROR 6910 [-/127.0.0.1/-/4ms GET /list] nodejs.ReferenceError: ctx is not defined
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:20:5)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-bodyparser/index.js:95:5)
+
+pid: 6910
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:10:05,753 ERROR 6819 nodejs.ClusterClientNoResponseError: client no response in 566779ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/egg-api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 6819
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:33:33,019 ERROR 7171 [-/::1/-/14ms POST /login] nodejs.TypeError: Cannot read property 'require' of undefined
+    at HomeController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:14:26)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 7171
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:34:37,348 ERROR 7175 [-/::1/-/18ms POST /login] nodejs.TypeError: Cannot read property 'request' of undefined
+    at HomeController.login (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:14:26)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 7175
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:58:51,625 ERROR 7251 [-/127.0.0.1/-/7ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:28:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7251
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 19:59:56,408 ERROR 7256 [-/127.0.0.1/-/10ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:28:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7256
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:00:21,891 ERROR 7256 [-/127.0.0.1/-/0ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:28:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7256
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:01:16,350 ERROR 7260 [-/127.0.0.1/-/9ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:29:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7260
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:03:17,629 ERROR 7260 [-/127.0.0.1/-/1ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:29:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7260
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:04:32,233 ERROR 7304 [-/127.0.0.1/-/4ms GET /list] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (/Users/xiaoqiao/Documents/egg-api/node_modules/jsonwebtoken/verify.js:75:17)
+    at AsyncFunction.<computed>.verify (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-jwt/app/extend/application.js:42:20)
+    at HomeController.list (/Users/xiaoqiao/Documents/egg-api/app/controller/home.js:29:21)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/egg-api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/egg-api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/egg-api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 7304
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 20:55:46,149 ERROR 7132 nodejs.ClusterClientNoResponseError: client no response in 2041943ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/egg-api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 7132
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 21:43:11,969 ERROR 7132 nodejs.ClusterClientNoResponseError: client no response in 2805791ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/egg-api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 7132
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 22:14:17,044 ERROR 7823 [-/127.0.0.1/-/1ms GET /] nodejs.Error: admin copy is not match 'a-z0-9_-' in admin copy.js
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:234:13
+    at Array.map (<anonymous>)
+    at defaultCamelize (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:232:21)
+    at getProperties (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:193:10)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:154:28)
+    at FileLoader.load (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 7823
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-27 22:14:21,795 ERROR 7828 [-/127.0.0.1/-/0ms GET /] nodejs.Error: admin copy is not match 'a-z0-9_-' in admin copy.js
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:234:13
+    at Array.map (<anonymous>)
+    at defaultCamelize (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:232:21)
+    at getProperties (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:193:10)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:154:28)
+    at FileLoader.load (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/egg-api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 7828
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 00:07:29,588 ERROR 8688 [-/::1/-/11ms GET /admin] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/application.js:270:15)
+    at handleResponse (/Users/xiaoqiao/Documents/egg-api/node_modules/koa/lib/application.js:166:34)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 8688
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:05:39,023 ERROR 11169 [-/127.0.0.1/-/0ms GET /] nodejs.Error: Illegal argument undefined
+    at module.exports (/Users/xiaoqiao/Documents/api/node_modules/md5/md5.js:152:13)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:27:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+
+pid: 11169
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:05:48,693 ERROR 11169 [-/127.0.0.1/-/0ms GET /] nodejs.Error: Illegal argument undefined
+    at module.exports (/Users/xiaoqiao/Documents/api/node_modules/md5/md5.js:152:13)
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:27:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+
+pid: 11169
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:12:27,052 ERROR 11297 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'username' of null
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:12:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:56:32)
+
+pid: 11297
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:13:17,197 ERROR 11305 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'username' of null
+    at UserService.create (/Users/xiaoqiao/Documents/api/app/service/user.js:11:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async AdminController.create (/Users/xiaoqiao/Documents/api/app/controller/admin.js:28:15)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:56:32)
+
+pid: 11305
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:27:38,900 ERROR 11559 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce2c57efb0ca123" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce2c57efb0ca123\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce2c57efb0ca123"
+path: "_id"
+reason: {}
+pid: 11559
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:28:03,754 ERROR 11559 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11559
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:28:58,381 ERROR 11559 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11559
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:23,881 ERROR 11581 [-/127.0.0.1/-/1ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:26,296 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:28,079 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:28,972 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:29:29,550 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5ef87bd70b4dce10c57efb0ca" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5ef87bd70b4dce10c57efb0ca\""
+kind: "ObjectId"
+value: "5ef87bd70b4dce10c57efb0ca"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:31:01,978 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5e82f1f27293c172a38d5e7f788" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5e82f1f27293c172a38d5e7f788\""
+kind: "ObjectId"
+value: "5e82f1f27293c172a38d5e7f788"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:31:07,452 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5e82f1f27293c172a38d5e7f7" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5e82f1f27293c172a38d5e7f7\""
+kind: "ObjectId"
+value: "5e82f1f27293c172a38d5e7f7"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:31:08,606 ERROR 11581 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "5e82f1f27293c172a38d5e7f7" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"5e82f1f27293c172a38d5e7f7\""
+kind: "ObjectId"
+value: "5e82f1f27293c172a38d5e7f7"
+path: "_id"
+reason: {}
+pid: 11581
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:42:20,356 ERROR 11761 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: toal is not defined
+    at AdminController.index (/Users/xiaoqiao/Documents/api/app/controller/admin.js:25:7)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:56:32)
+
+pid: 11761
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 19:43:37,898 ERROR 11808 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: data is not defined
+    at AdminController.index (/Users/xiaoqiao/Documents/api/app/controller/admin.js:25:10)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/xiaoqiao/Documents/api/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/xiaoqiao/Documents/api/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/xiaoqiao/Documents/api/node_modules/@koa/cors/index.js:56:32)
+
+pid: 11808
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-06-28 21:42:18,806 ERROR 10087 nodejs.ClusterClientNoResponseError: client no response in 1743451ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 10087
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 11:22:22,266 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 624079ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 15:13:03,862 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 11481272ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 15:35:09,691 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 245656ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:28:14,277 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 789199ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:33:30,206 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 295971ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:43:29,609 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 559387ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 17:54:31,547 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 433073ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-01 19:35:29,571 ERROR 22526 nodejs.ClusterClientNoResponseError: client no response in 3637635ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 22526
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 18:39:21,800 ERROR 29838 nodejs.ClusterClientNoResponseError: client no response in 2876838ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 29838
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 18:40:37,196 ERROR 29838 nodejs.ClusterClientNoResponseError: client no response in 75393ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 29838
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 18:47:43,873 ERROR 31390 nodejs.ClusterClientNoResponseError: client no response in 80053ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 31390
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 20:29:39,166 ERROR 31390 nodejs.ClusterClientNoResponseError: client no response in 692752ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 31390
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 21:09:11,442 ERROR 31390 nodejs.ClusterClientNoResponseError: client no response in 66662ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 31390
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 21:54:11,229 ERROR 34095 [-/127.0.0.1/-/0ms GET /] nodejs.Error: Invalid select: select only takes 1 argument
+    at model.Query.select (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:947:11)
+    at AdminController.login (/Users/xiaoqiao/Documents/api/app/controller/admin.js:71:87)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at /Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at /Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:13
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+
+pid: 34095
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 22:14:15,212 ERROR 34415 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to number failed for value "/(?:)/" at path "status" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"/(?:)/\""
+kind: "number"
+value: "/(?:)/"
+path: "status"
+reason: null
+pid: 34415
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 22:14:34,440 ERROR 34430 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to number failed for value "/1/" at path "status" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"/1/\""
+kind: "number"
+value: "/1/"
+path: "status"
+reason: null
+pid: 34430
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 22:14:38,438 ERROR 34430 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to number failed for value "/1/" at path "status" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"/1/\""
+kind: "number"
+value: "/1/"
+path: "status"
+reason: null
+pid: 34430
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 22:15:05,691 ERROR 34446 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to number failed for value "1" at path "status" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"1\""
+kind: "number"
+value: 1
+path: "status"
+reason: null
+pid: 34446
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 22:15:06,777 ERROR 34446 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to number failed for value "1" at path "status" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"1\""
+kind: "number"
+value: 1
+path: "status"
+reason: null
+pid: 34446
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-02 22:15:07,187 ERROR 34446 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to number failed for value "1" at path "status" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"1\""
+kind: "number"
+value: 1
+path: "status"
+reason: null
+pid: 34446
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 00:02:51,980 ERROR 35127 [-/127.0.0.1/-/0ms GET /] nodejs.CastError: Cast to ObjectId failed for value "list" at path "_id" for model "Admin"
+    at model.Query.exec (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/Users/xiaoqiao/Documents/api/node_modules/mongoose/lib/query.js:4443:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+messageFormat: undefined
+stringValue: "\"list\""
+kind: "ObjectId"
+value: "list"
+path: "_id"
+reason: {}
+pid: 35127
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 14:42:34,015 ERROR 36905 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: ctx is not defined
+    at new RolesController (/Users/xiaoqiao/Documents/api/app/controller/roles.js:8:11)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:83:26)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+
+pid: 36905
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 14:44:32,755 ERROR 37212 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: ctx is not defined
+    at new RolesController (/Users/xiaoqiao/Documents/api/app/controller/roles.js:8:11)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:83:26)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/xiaoqiao/Documents/api/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/xiaoqiao/Documents/api/node_modules/koa-bodyparser/index.js:95:5)
+
+pid: 37212
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 15:05:39,419 ERROR 37470 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at RoleService.create (/Users/xiaoqiao/Documents/api/app/service/role.js:9:37)
+    at RolesController.create (/Users/xiaoqiao/Documents/api/app/controller/roles.js:56:38)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+
+pid: 37470
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 16:01:54,230 ERROR 38369 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: d is not defined
+    at module.exports (/Users/xiaoqiao/Documents/api/app/model/access.js:26:16)
+    at getExports (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 38369
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 16:03:59,233 ERROR 38398 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: d is not defined
+    at module.exports (/Users/xiaoqiao/Documents/api/app/model/access.js:26:16)
+    at getExports (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 38398
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 16:05:36,047 ERROR 38409 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: d is not defined
+    at module.exports (/Users/xiaoqiao/Documents/api/app/model/access.js:25:16)
+    at getExports (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 38409
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 16:05:39,503 ERROR 38417 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: d is not defined
+    at module.exports (/Users/xiaoqiao/Documents/api/app/model/access.js:26:16)
+    at getExports (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 38417
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 16:06:00,192 ERROR 38428 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: d is not defined
+    at module.exports (/Users/xiaoqiao/Documents/api/app/model/access.js:27:16)
+    at getExports (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:111:14)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-mongoose/lib/mongoose.js:50:7
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:42)
+    at /Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/lifecycle.js:256:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+
+pid: 38428
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 16:49:26,296 ERROR 35643 nodejs.ClusterClientNoResponseError: client no response in 85557ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 35643
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 17:08:24,401 ERROR 35643 nodejs.ClusterClientNoResponseError: client no response in 1058090ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 35643
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 18:41:40,519 ERROR 35643 nodejs.ClusterClientNoResponseError: client no response in 2764225ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 35643
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 18:52:28,042 ERROR 35643 nodejs.ClusterClientNoResponseError: client no response in 647521ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xiaoqiao/Documents/api/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 35643
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:07:58,163 ERROR 40969 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:39:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 40969
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:08:42,876 ERROR 40969 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:39:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 40969
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:09:16,823 ERROR 40969 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:39:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 40969
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:09:56,509 ERROR 40969 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:39:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 40969
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:13:06,021 ERROR 40969 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:39:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 40969
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:13:10,616 ERROR 40969 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:39:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 40969
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:13:14,136 ERROR 40969 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:39:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 40969
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:17:18,635 ERROR 41134 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:40:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 41134
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-03 20:18:17,515 ERROR 41164 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: rule type must be one of number, int, integer, string, id, date, dateTime, datetime, boolean, bool, array, object, enum, email, password, url, but the following type was passed: function Number() { [native code] }
+    at Parameter.validate (/Users/xiaoqiao/Documents/api/node_modules/parameter/index.js:106:15)
+    at Object.validate (/Users/xiaoqiao/Documents/api/node_modules/egg-validate/app/extend/context.js:12:39)
+    at AccessController.addMenu (/Users/xiaoqiao/Documents/api/app/controller/access.js:40:9)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xiaoqiao/Documents/api/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xiaoqiao/Documents/api/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/xiaoqiao/Documents/api/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/xiaoqiao/Documents/api/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/xiaoqiao/Documents/api/app/middleware/errorHandler.js:6:7
+    at async /Users/xiaoqiao/Documents/api/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/xiaoqiao/Documents/api/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 41164
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-04 00:10:38,100 ERROR 42206 [-/127.0.0.1/-/0ms GET /] nodejs.MongoError: The field 'module_id' must be an accumulator object
+    at Connection.<anonymous> (/Users/xiaoqiao/Documents/api/node_modules/mongodb/lib/core/connection/pool.js:451:61)
+    at Connection.emit (events.js:209:13)
+    at processMessage (/Users/xiaoqiao/Documents/api/node_modules/mongodb/lib/core/connection/connection.js:384:10)
+    at Socket.<anonymous> (/Users/xiaoqiao/Documents/api/node_modules/mongodb/lib/core/connection/connection.js:553:15)
+    at Socket.emit (events.js:209:13)
+    at addChunk (_stream_readable.js:305:12)
+    at readableAddChunk (_stream_readable.js:286:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+ok: 0
+code: 40234
+codeName: "Location40234"
+name: "MongoError"
+pid: 42206
+hostname: xiaoqiaodeMacBook-Pro.local
+
+2020-07-04 00:12:48,225 ERROR 42257 [-/127.0.0.1/-/0ms GET /] nodejs.MongoError: The field 'type' must be an accumulator object
+    at Connection.<anonymous> (/Users/xiaoqiao/Documents/api/node_modules/mongodb/lib/core/connection/pool.js:451:61)
+    at Connection.emit (events.js:209:13)
+    at processMessage (/Users/xiaoqiao/Documents/api/node_modules/mongodb/lib/core/connection/connection.js:384:10)
+    at Socket.<anonymous> (/Users/xiaoqiao/Documents/api/node_modules/mongodb/lib/core/connection/connection.js:553:15)
+    at Socket.emit (events.js:209:13)
+    at addChunk (_stream_readable.js:305:12)
+    at readableAddChunk (_stream_readable.js:286:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+ok: 0
+code: 40234
+codeName: "Location40234"
+name: "MongoError"
+pid: 42257
+hostname: xiaoqiaodeMacBook-Pro.local
+

@@ -30,7 +30,7 @@ module.exports = appInfo => {
   // jwt
   config.jwt = {
     secret: 'XIAOQIAO',
-    expiresIn: '60m'
+    expiresIn: '600m'
   };
 
    // cors

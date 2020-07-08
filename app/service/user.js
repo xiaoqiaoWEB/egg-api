@@ -16,7 +16,7 @@ class UserService extends Service {
 
   async getById(id) {
     const { ctx, service } = this
-    let user = await ctx.model.Admin.findById(id);
+    let user = await ctx.model.Admin.findById(id).populate('role_id');
     if (!user) { ctx.throw(409, '用户不存在！') };
     return user;
   }
@@ -26,6 +26,12 @@ class UserService extends Service {
     let user = ctx.model.Admin.findByIdAndUpdate(id, data);
     if (!user) { ctx.throw(409, '用户名已存在') }
     return user;
+  }
+
+  async remove (id) {
+    const { ctx, service } = this;
+    let user = await ctx.model.Admin.findByIdAndDelete(id);
+    if (!user) { ctx.throw(409, '用户不存在！') };
   }
 }
 
